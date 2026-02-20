@@ -1,1 +1,36 @@
+nav,
+.explore-link,
+footer {
+  background-color: #323232;
+}
 
+.bi-list,
+.login,
+.explore-link a {
+  color: #f05667;
+  text-decoration: none;
+}
+
+#logo {
+  filter: brightness(0) invert(1);
+  opacity: 80%;
+  height: 1em;
+}
+
+.bi-explicit-fill {
+  font-size: 0.9em;
+}
+.explore-link {
+  cursor: pointer;
+}
+
+.explore-link a {
+  font-size: 1.2em;
+  opacity: 85%;
+}
+
+footer a,
+p {
+  text-decoration: none;
+  font-size: 0.9em;
+}
