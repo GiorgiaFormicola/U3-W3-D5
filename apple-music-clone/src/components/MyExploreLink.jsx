@@ -1,16 +1,13 @@
-import { Col } from "react-bootstrap";
 const MyExploreLink = (props) => {
   return (
-    <Col xs={12}>
-      <div className="explore-link rounded-3 p-4">
-        <a href="" className="text-decoration-none">
-          <p className="d-flex justify-content-between mb-0">
-            <span>{props.text}</span>
-            <span>{">"}</span>
-          </p>
-        </a>
-      </div>
-    </Col>
+    <div className="explore-link rounded-3 p-3 text-truncate">
+      <a href="" className="text-decoration-none">
+        <p className="d-flex justify-content-between align-items-center my-1">
+          <span>{props.text}</span>
+          <i className="fas fa-chevron-right fs-6 ps-1"></i>
+        </p>
+      </a>
+    </div>
   );
 };
 export default MyExploreLink;

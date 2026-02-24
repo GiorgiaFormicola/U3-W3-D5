@@ -2,16 +2,26 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const MyNavbar = () => {
   return (
-    <nav>
-      <Container fluid className="px-4 py-1">
+    <nav className="d-lg-none" id="navbar">
+      <Col className="px-4 py-2">
         <Row>
           <Col className="d-flex align-items-center justify-content-between">
-            <i className="bi bi-list fs-1"></i>
+            <div>
+              <div className="minus">
+                <i className="fas fa-minus"></i>
+                <i className="fas fa-minus"></i>
+              </div>
+              <div>
+                <i className="fas fa-minus"></i>
+                <i className="fas fa-minus"></i>
+              </div>
+            </div>
+
             <img src="/assets/logos/music.svg" alt="" id="logo" />
             <a className="login mb-0">Accedi</a>
           </Col>
         </Row>
-      </Container>
+      </Col>
     </nav>
   );
 };

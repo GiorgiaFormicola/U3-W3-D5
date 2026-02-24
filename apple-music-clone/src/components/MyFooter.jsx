@@ -1,10 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
-import ListGroup from "react-bootstrap/ListGroup";
 
 const MyFooter = () => {
   return (
-    <footer className="text-light text-opacity-50 py-2">
-      <Container fluid className="px-4">
+    <footer className="text-light text-opacity-50 py-2 pb-5 mb-4 mb-lg-0 pb-lg-2">
+      <Col className="px-4 pb-1">
         <Row className="mt-2 mb-4">
           <Col>
             <a href="" className="text-light text-opacity-75 border-end pe-3">
@@ -45,7 +44,7 @@ const MyFooter = () => {
             </a>
           </Col>
         </Row>
-      </Container>
+      </Col>
     </footer>
   );
 };

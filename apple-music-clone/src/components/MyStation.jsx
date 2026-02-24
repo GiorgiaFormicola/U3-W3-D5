@@ -7,7 +7,7 @@ const MyStation = (props) => {
           <Card.Text className="mb-0">
             <small className="text-light text-opacity-50 fw-semibold">NUOVA STAZIONE RADIO</small>
           </Card.Text>
-          <Card.Text className="fw-normal text-light opacity-75 fs-5 lh-sm">{props.text}</Card.Text>
+          <Card.Text className="fw-normal text-light opacity-75 fs-4 lh-sm">{props.text}</Card.Text>
         </Card.Body>
         <Card.Img variant="bottom" src={props.src} className="rounded-3" />
       </Card>

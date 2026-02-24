@@ -7,12 +7,12 @@ import MyNewsSection from "./MyNewsSection";
 const MyMain = () => {
   return (
     <main>
-      <Container fluid className="px-4 py-1">
+      <Col className="p-4">
         <MyNewsSection></MyNewsSection>
         <MyRadioSection></MyRadioSection>
         <MyQuerySection></MyQuerySection>
         <MyExploreSection> </MyExploreSection>
-      </Container>
+      </Col>
     </main>
   );
 };
