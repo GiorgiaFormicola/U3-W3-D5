@@ -3,38 +3,34 @@ import "bootstrap-icons/font/bootstrap-icons.min.css";
 import "./App.css";
 import { Container, Row, Col } from "react-bootstrap";
 import MyMain from "./components/MyMain";
-import MyNavbar from "./components/MyNavBar";
-import MyPlayer from "./components/MyPlayer";
 import MyFooter from "./components/MyFooter";
-
-// function App() {
-//   return (
-//     <Container fluid className="min-vh-100 bg-dark d-lg-flex px-0" data-bs-theme="dark">
-//       <Row className="g-0">
-//         <Col>
-//           <MyNavbar />
-//         </Col>
-//       </Row>
-//       <Row className="flex-grow-1 g-0">
-//         <Col>
-//           <MyMain />
-//           <MyFooter />
-//           {/* <MyPlayer /> */}
-//         </Col>
-//       </Row>
-//     </Container>
-//   );
-// }
-
-// export default App;
+import MyPlayer from "./components/MyPlayer";
+import MySidebar from "./components/MySidebar";
+import MyNavDesktop from "./components/MyNavDesktop";
+import store from "./redux/store";
+import { Provider } from "react-redux";
 
 function App() {
   return (
-    <div className="min-vh-100 bg-dark d-flex flex-column" data-bs-theme="dark">
-      <MyNavbar></MyNavbar>
-      <MyMain></MyMain>
-      <MyFooter></MyFooter>
-    </div>
+    <>
+      <Provider store={store}>
+        <Container fluid>
+          <Row>
+            <Col lg={2} className="d-none d-lg-block px-0 vh-100 position-fixed top-0 bg-dark">
+              <MySidebar></MySidebar>
+            </Col>
+            <Col className="min-vh-100 d-flex flex-column offset-lg-2" data-bs-theme="dark" id="main">
+              <Row>
+                <MyNavDesktop></MyNavDesktop>
+                <MyMain></MyMain>
+                <MyFooter></MyFooter>
+                <MyPlayer></MyPlayer>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+      </Provider>
+    </>
   );
 }
 

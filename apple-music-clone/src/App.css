@@ -1,6 +1,7 @@
 #navbar,
 .explore-link,
-footer {
+footer,
+#player .col {
   background-color: #323232;
 }
 
@@ -41,4 +42,55 @@ footer a,
 p {
   text-decoration: none;
   font-size: 0.9em;
+}
+
+#player {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+#player img {
+  height: 3em;
+}
+
+.bi-play-fill {
+  font-size: 2em;
+}
+
+.bi-fast-forward-fill {
+  font-size: 1.5em;
+}
+
+#sidebar .bi {
+  color: #f05667;
+}
+
+#sidebar a {
+  text-decoration: none;
+}
+
+#main {
+  background-color: #1f1f1f;
+}
+
+.card {
+  background-color: transparent;
+}
+
+#side-nav div:hover {
+  background-color: #39393b;
+}
+
+#apple {
+  filter: brightness(0) invert(1);
+  opacity: 80%;
+  height: 1.5em;
+}
+
+#nav-desk {
+  background-color: #2b2a2a;
+}
+
+.volume {
+  accent-color: #ffffff;
+  width: 5em;
 }
