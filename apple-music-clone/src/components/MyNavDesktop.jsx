@@ -43,7 +43,7 @@ const MyNavDesktop = () => {
         </Col>
         <Col>
           <div className="d-flex align-items-center">
-            <div className="flex-grow-1 text-center text-light text-opacity-25">
+            <div className="flex-grow-1 text-center text-light text-opacity-25 d-flex align-items-center justify-content-center">
               <i className="bi bi-volume-up-fill px-1 "></i>
               <input type="range" min="0" max="100" value="50" className="volume px-1"></input>
             </div>
